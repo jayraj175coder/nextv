@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nextv/static/css/main.0902ed4b.css",
+    "main.js": "/nextv/static/js/main.5f9e1daa.js",
+    "index.html": "/nextv/index.html",
+    "main.0902ed4b.css.map": "/nextv/static/css/main.0902ed4b.css.map",
+    "main.5f9e1daa.js.map": "/nextv/static/js/main.5f9e1daa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0902ed4b.css",
+    "static/js/main.5f9e1daa.js"
+  ]
+}
