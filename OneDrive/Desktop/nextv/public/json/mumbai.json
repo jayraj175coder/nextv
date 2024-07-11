@@ -1,0 +1,646 @@
+[
+    {
+        "srno": "2",
+        "InstiCode": "3012",
+        "InstiName": "Veermata Jijabai Technological Institute(VJTI)",
+        "region":"mumbai"
+    },
+    {
+        "srno": "3",
+        "InstiCode": "3014",
+        "InstiName": "Sardar Patel College of Engineering"
+    },
+
+    {
+        "srno": "6",
+        "InstiCode": "3033",
+        "InstiName": "Dr. Babasaheb Ambedkar Technological University"
+    },
+    {
+        "srno": "7",
+        "InstiCode": "3035",
+        "InstiName": "Usha Mittal Institute of Technology SNDT Women's University"
+    },
+    
+    
+    
+    {
+        "srno": "11",
+        "InstiCode": "3135",
+        "InstiName": "Manjara Charitable Trust's Rajiv Gandhi Institute of Technology"
+    },
+    {
+        "srno": "12",
+        "InstiCode": "3139",
+        "InstiName": "Vidyalankar Institute of Technology"
+    },
+    {
+        "srno": "13",
+        "InstiCode": "3146",
+        "InstiName": "Jawahar Education Society's Annasaheb Chudaman Patil College of Engineering"
+    },
+    
+    {
+        "srno": "15",
+        "InstiCode": "3148",
+        "InstiName": "Mahavir Education Trust's Shah & Anchor Kutchhi Engineering College"
+    },
+    {
+        "srno": "16",
+        "InstiCode": "3154",
+        "InstiName": "Saraswati Education Society's Saraswati College of Engineering"
+    },
+    
+    {
+        "srno": "21",
+        "InstiCode": "3174",
+        "InstiName": "Ramrao Adik Edu Soc"
+    },
+    {
+        "srno": "22",
+        "InstiCode": "3175",
+        "InstiName": "M.G.M.'s College of Engineering and Technology"
+    },
+    {
+        "srno": "23",
+        "InstiCode": "3176",
+        "InstiName": "Thakur College of Engineering and Technology"
+    },
+    {
+        "srno": "24",
+        "InstiCode": "3181",
+        "InstiName": "K.J.Somaiya College of Engineering"
+    },
+    {
+        "srno": "25",
+        "InstiCode": "3182",
+        "InstiName": "Thadomal Shahani Engineering College"
+    },
+    {
+        "srno": "26",
+        "InstiCode": "3183",
+        "InstiName": "Anjuman-I-Islam's M.H. Saboo Siddik College of Engineering"
+    },
+    {
+        "srno": "27",
+        "InstiCode": "3184",
+        "InstiName": "Fr. Conceicao Rodrigues College of Engineering"
+    },
+    {
+        "srno": "28",
+        "InstiCode": "3185",
+        "InstiName": "Vivekanand Education Society's Institute of Technology"
+    },
+    {
+        "srno": "29",
+        "InstiCode": "3187",
+        "InstiName": "N.Y.S.S.'s Datta Meghe College of Engineering"
+    },
+    {
+        "srno": "30",
+        "InstiCode": "3188",
+        "InstiName": "Vasantdada Patil Pratishthan's College Of Engineering and Visual Arts"
+    },
+    {
+        "srno": "31",
+        "InstiCode": "3189",
+        "InstiName": "Bharati Vidyapeeth College of Engineering"
+    },
+    {
+        "srno": "32",
+        "InstiCode": "3190",
+        "InstiName": "Terna Engineering College"
+    },
+    
+    {
+        "srno": "34",
+        "InstiCode": "3192",
+        "InstiName": "Smt. Indira Gandhi College of Engineering"
+    },
+    {
+        "srno": "35",
+        "InstiCode": "3193",
+        "InstiName": "Shivajirao S. Jondhale College of Engineering"
+    },
+    {
+        "srno": "36",
+        "InstiCode": "3194",
+        "InstiName": "Vidyavardhini's College of Engineering and Technology"
+    },
+    {
+        "srno": "37",
+        "InstiCode": "3196",
+        "InstiName": "Lokmanya Tilak College of Engineering"
+    },
+    {
+        "srno": "38",
+        "InstiCode": "3197",
+        "InstiName": "Agnel Charities' FR. C. Rodrigues Institute of Technology"
+    },
+    {
+        "srno": "39",
+        "InstiCode": "3198",
+        "InstiName": "Konkan Gyanpeeth College of Engineering"
+    },
+    {
+        "srno": "40",
+        "InstiCode": "3199",
+        "InstiName": "Shri Vile Parle Kelvani Mandal's Dwarkadas J. Sanghvi College of Engineering"
+    },
+    {
+        "srno": "41",
+        "InstiCode": "3200",
+        "InstiName": "Hope Foundation and research center's Finolex Academy of Management and Technology"
+    },
+    {
+        "srno": "42",
+        "InstiCode": "3201",
+        "InstiName": "Rizvi Education Society's Rizvi College of Engineering"
+    },
+    {
+        "srno": "43",
+        "InstiCode": "3202",
+        "InstiName": "Rajendra Mane College of Engineering & Technology Ambav Deorukh"
+    },
+    {
+        "srno": "44",
+        "InstiCode": "3203",
+        "InstiName": "Atharva College of Engineering"
+    },
+    {
+        "srno": "45",
+        "InstiCode": "3204",
+        "InstiName": "St. Francis Institute of Technology"
+    },
+    {
+        "srno": "46",
+        "InstiCode": "3206",
+        "InstiName": "S.S.P.M.'s College of Engineering"
+    },
+    {
+        "srno": "47",
+        "InstiCode": "3207",
+        "InstiName": "Mahatma Education Society's Pillai College of Engineering"
+    },
+    {
+        "srno": "48",
+        "InstiCode": "3208",
+        "InstiName": "Don Bosco Institute of Technology"
+    },
+    {
+        "srno": "49",
+        "InstiCode": "3209",
+        "InstiName": "K J Somaiya Institute of Engineering and Information Technology"
+    },
+    {
+        "srno": "50",
+        "InstiCode": "3210",
+        "InstiName": "Excelsior Education Society's K.C. College of Engineering and Management Studies and Research"
+    },
+    {
+        "srno": "51",
+        "InstiCode": "3211",
+        "InstiName": "S.I.E.S. Graduate School of Technology"
+    },
+    {
+        "srno": "52",
+        "InstiCode": "3212",
+        "InstiName": "WATUMULL INSTITUTE OF ELECTRONICS ENGINEERING & COMPUTER TECHNOLOGY"
+    },
+    {
+        "srno": "53",
+        "InstiCode": "3214",
+        "InstiName": "Xavier Institute Of Engineering C/O Xavier Technical Institute"
+    },
+    {
+        "srno": "54",
+        "InstiCode": "3215",
+        "InstiName": "Bhartiya Vidya Bhavan's Sardar Patel Institute of Technology "
+    },
+    {
+        "srno": "55",
+        "InstiCode": "3216",
+        "InstiName": "Gharda Foundation's Gharda Institute of Technology"
+    },
+    {
+        "srno": "56",
+        "InstiCode": "3217",
+        "InstiName": "Vighnaharata Trust's Shivajirao S. Jondhale College of Engineering & Technology"
+    },
+    {
+        "srno": "57",
+        "InstiCode": "3218",
+        "InstiName": "Aldel Education Trust's St. John College of Engineering & Management"
+    },
+    {
+        "srno": "58",
+        "InstiCode": "3219",
+        "InstiName": "Koti Vidya Charitable Trust's Smt. Alamuri Ratnamala Institute of Engineering and Technology"
+    },
+    
+    {
+        "srno": "60",
+        "InstiCode": "3222",
+        "InstiName": "Haji Jamaluddin Thim Trust's Theem College of Engineering"
+    },
+    {
+        "srno": "61",
+        "InstiCode": "3223",
+        "InstiName": "Mahatma Education Society's Pillai HOC College of Engineering & Technology"
+    },
+    {
+        "srno": "62",
+        "InstiCode": "3224",
+        "InstiName": "Leela Education Society"
+    },
+    
+    {
+        "srno": "69",
+        "InstiCode": "3351",
+        "InstiName": "Bharat College of Engineering"
+    },
+    {
+        "srno": "70",
+        "InstiCode": "3353",
+        "InstiName": "Dilkap Research Institute Of Engineering and Management Studies"
+    },
+    {
+        "srno": "71",
+        "InstiCode": "3436",
+        "InstiName": "B.R. Harne College of Engineering & Technology"
+    },
+    {
+        "srno": "72",
+        "InstiCode": "3439",
+        "InstiName": "Anjuman-I-Islam's Kalsekar Technical Campus"
+    },
+    {
+        "srno": "73",
+        "InstiCode": "3440",
+        "InstiName": "Metropolitan Institute of Technology & Management"
+    },
+    {
+        "srno": "74",
+        "InstiCode": "3445",
+        "InstiName": "Vishvatmak Jangli Maharaj Ashram Trust's Vishvatmak Om Gurudev College of Engineering"
+    },
+    {
+        "srno": "75",
+        "InstiCode": "3447",
+        "InstiName": "G.M.Vedak Institute of Technology"
+    },
+    
+    {
+        "srno": "77",
+        "InstiCode": "3460",
+        "InstiName": "Universal College of Engineering"
+    },
+    {
+        "srno": "78",
+        "InstiCode": "3462",
+        "InstiName": "VPM's Maharshi Parshuram College of Engineering"
+    },
+    {
+        "srno": "79",
+        "InstiCode": "3465",
+        "InstiName": "Ideal Institute of Technology"
+    },
+    {
+        "srno": "80",
+        "InstiCode": "3467",
+        "InstiName": "Vishwaniketan's Institute of Management Entrepreneurship and Engineering Technology(i MEET)"
+    },
+
+    {
+        "srno": "81",
+        "InstiCode": "3475",
+        "InstiName": "A. P. Shah Institute of Technology"
+    },
+    {
+        "srno": "82",
+        "InstiCode": "3477",
+        "InstiName": "Chhartrapati Shivaji Maharaj Institute of Technology"
+    },
+    {
+        "srno": 1,
+        "InstiCode": 4004,
+        "InstiName": "Government College of Engineering, Chandrapur"
+    },
+    {
+        "srno": 2,
+        "InstiCode": 4005,
+        "InstiName": "Laxminarayan Institute of Technology, Nagpur"
+    },
+    {
+        "srno": 3,
+        "InstiCode": 4025,
+        "InstiName": "Government College of Engineering, Nagpur"
+    },
+    {
+        "srno": 4,
+        "InstiCode": 4104,
+        "InstiName": "Kavi Kulguru Institute of Technology & Science, Ramtek"
+    },
+    {
+        "srno": 5,
+        "InstiCode": 4115,
+        "InstiName": "Shri Ramdeobaba College of Engineering and Management, Nagpur"
+    },
+    {
+        "srno": 6,
+        "InstiCode": 4116,
+        "InstiName": "Ankush Shikshan Sanstha's G.H.Raisoni College of Engineering, Nagpur"
+    },
+    {
+        "srno": 7,
+        "InstiCode": 4117,
+        "InstiName": "G.H. Raisoni Institute of Information Technology"
+    },
+    {
+        "srno": 8,
+        "InstiCode": 4118,
+        "InstiName": "Bapurao Deshmukh College of Engineering, Sevagram"
+    },
+    {
+        "srno": 9,
+        "InstiCode": 4123,
+        "InstiName": "Lokmanya Tilak Jankalyan Shikshan Sanstha, Priyadarshani College of Engineering, Nagpur"
+    },
+    {
+        "srno": 10,
+        "InstiCode": 4128,
+        "InstiName": "Ranibai Agnihotri Institute of Computer Information Technology, Wardha"
+    },
+    {
+        "srno": 11,
+        "InstiCode": 4133,
+        "InstiName": "Sanmarg Shikshan Sanstha's Smt. Radhikatai Pandav College of Engineering, Nagpur"
+    },
+    {
+        "srno": 12,
+        "InstiCode": 4134,
+        "InstiName": "Guru Nanak Institute of Engineering & Technology,Kalmeshwar, Nagpur"
+    },
+    {
+        "srno": 13,
+        "InstiCode": 4135,
+        "InstiName": "Amar Seva Mandal's Shree Govindrao Vanjari College of Engineering & Technology, Nagpur"
+    },
+    {
+        "srno": 14,
+        "InstiCode": 4136,
+        "InstiName": "Lokmanya Tilak Jankalyan Shikshan Sastha, Priyadarshini J. L. College Of Engineering, Nagpur"
+    },
+    {
+        "srno": 15,
+        "InstiCode": 4137,
+        "InstiName": "Sir Shantilal Badjate Charitable Trust's S. B. Jain Institute of technology, Management & Research, Nagpur"
+    },
+    {
+        "srno": 16,
+        "InstiCode": 4138,
+        "InstiName": "Jaidev Education Society, J D College of Engineering and Management, Nagpur"
+    },
+    {
+        "srno": 17,
+        "InstiCode": 4139,
+        "InstiName": "Samridhi Sarwajanik Charitable Trust, Jhulelal Institute of Technology, Nagpur"
+    },
+    {
+        "srno": 18,
+        "InstiCode": 4141,
+        "InstiName": "Shriram Gram Vikas Shikshan Sanstha, Vilasrao Deshmukh College of Engineering and Technology, Nagpur"
+    },
+    {
+        "srno": 19,
+        "InstiCode": 4142,
+        "InstiName": "Ankush Shikshan Sanstha's G. H. Raisoni Institute of Engineering & Technology, Nagpur"
+    },
+    {
+        "srno": 20,
+        "InstiCode": 4143,
+        "InstiName": "Sanmarg Shikshan Sanstha, Mandukarrao Pandav College of Engineering, Bhandara"
+    },
+    {
+        "srno": 21,
+        "InstiCode": 4144,
+        "InstiName": "Shri. Sai Shikshan Sanstha, Nagpur Institute of Technology, Nagpur"
+    },
+    {
+        "srno": 22,
+        "InstiCode": 4145,
+        "InstiName": "Wainganga College of Engineering and Management, Dongargaon, Nagpur"
+    },
+    {
+        "srno": 23,
+        "InstiCode": 4146,
+        "InstiName": "KDK College of Engineering, Umrer, Nagpur"
+    },
+    {
+        "srno": 24,
+        "InstiCode": 4147,
+        "InstiName": "K.D.K. College of Engineering, Nagpur"
+    },
+    {
+        "srno": 25,
+        "InstiCode": 4151,
+        "InstiName": "Vidarbha Bahu-Uddeshiya Shikshan Sanstha's Tulshiramji Gaikwad Patil College of Engineering & Technology, Nagpur"
+    },
+    {
+        "srno": 26,
+        "InstiCode": 4163,
+        "InstiName": "Rajiv Gandhi College of Engineering Research & Technology Chandrapur"
+    },
+    {
+        "srno": 27,
+        "InstiCode": 4165,
+        "InstiName": "Gondia Education Society's Manoharbhai Patel Institute of Engineering and Technology, Gondia"
+    },
+    {
+        "srno": 28,
+        "InstiCode": 4167,
+        "InstiName": "Yeshwantrao Chavan College of Engineering,Wanadongri, Nagpur"
+    },
+    {
+        "srno": 29,
+        "InstiCode": 4171,
+        "InstiName": "Lokmanya Tilak Jankalyan Shikshan Sanstha's , Priyadarshini Institute of Engineering and Technology, Nagpur"
+    },
+    {
+        "srno": 30,
+        "InstiCode": 4172,
+        "InstiName": "Anjuman College of Engineering & Technology, Nagpur"
+    },
+    {
+        "srno": 31,
+        "InstiCode": 4174,
+        "InstiName": "ST. Vincent Pallotti College of Engineering & Technology, Nagpur"
+    },
+    {
+        "srno": 32,
+        "InstiCode": 4175,
+        "InstiName": "JMSS Shri Shankarprasad Agnihotri College of Engineering, Wardha"
+    },
+    {
+        "srno": 33,
+        "InstiCode": 4177,
+        "InstiName": "Priyadarshini Bhagwati College of Engineering, Harpur Nagar, Umred Road,Nagpur"
+    },
+    {
+        "srno": 34,
+        "InstiCode": 4178,
+        "InstiName": "Rajiv Gandhi College of Engineering & Research, Hingna Road, Nagpur"
+    },
+    {
+        "srno": 35,
+        "InstiCode": 4179,
+        "InstiName": "Lokmanya Tilak Jankalyan Shiksan Sanstha, Priyadarshini Indira Gandhi College of Engineering, Nagpur"
+    },
+    {
+        "srno": 36,
+        "InstiCode": 4180,
+        "InstiName": "KDKs Shrimati Rajashri Mulak College of Engineering for Womens, Nagpur"
+    },
+    {
+        "srno": 37,
+        "InstiCode": 4181,
+        "InstiName": "Swaminarayan Siddhanta Institute Of Technology, Nagpur"
+    },
+    {
+        "srno": 38,
+        "InstiCode": 4184,
+        "InstiName": "Om Arunodaya Bahuuddeshiya Khadi Garmudyog Vikas Sanstha's Om College of Engineering, Inzapur, Wardha(Closed A.Y. 2018-19)"
+    },
+    {
+        "srno": 39,
+        "InstiCode": 4185,
+        "InstiName": "Shree Bapuraoji Deshmukh Foundation, Suresh Deshmukh College of Engineering, Selukate, Wardha"
+    },
+    {
+        "srno": 40,
+        "InstiCode": 4186,
+        "InstiName": "Datta Meghe Institute of Medical Science's Datta Meghe Institute of Engineering & Technology & Research, Savangi (Meghe)"
+    },
+    {
+        "srno": 41,
+        "InstiCode": 4187,
+        "InstiName": "Dr. Babasaheb Ambedkar College of Engineering and Research, Wanadongri, Nagpur"
+    },
+    {
+        "srno": 42,
+        "InstiCode": 4188,
+        "InstiName": "Krushi Jivan Vikas Pratishthan, Ballarpur Institute of Technology, Mouza Bamni"
+    },
+    {
+        "srno": 43,
+        "InstiCode": 4189,
+        "InstiName": "Sardar Patel Memorial Society's Namdevrao Poreddiwar College of Engineering and Technology, Gadchiroli"
+    },
+    {
+        "srno": 44,
+        "InstiCode": 4190,
+        "InstiName": "M.D. Yergude Memorial Shikshan Prasarak Mandal's Shri Sai College of Engineering & Technology, Badravati"
+    },
+    {
+        "srno": 45,
+        "InstiCode": 4192,
+        "InstiName": "Maitraya Education Society, Nagarjuna Institute of Engineering Technology & Management, Nagpur"
+    },
+    {
+        "srno": 46,
+        "InstiCode": 4193,
+        "InstiName": "K.D.M. Education Society, Vidharbha Institute of Technology,Umred Road ,Nagpur"
+    },
+    {
+        "srno": 47,
+        "InstiCode": 4194,
+        "InstiName": "Nav Disha Education Soc, Acharya Vinoba Bhave Institute of Technology ,Mauza-Pawnar,Wardha"
+    },
+    {
+        "srno": 48,
+        "InstiCode": 4195,
+        "InstiName": "Vidharbha Bahu uddeshiya Shikshan Sanstha's Abha Gaikwad - Patil College of Engineering, Nagpur"
+    },
+    {
+        "srno": 49,
+        "InstiCode": 4196,
+        "InstiName": "Gurunanak Educational Society's Gurunanak Institute of Technology, Nagpur"
+    },
+    {
+        "srno": 50,
+        "InstiCode": 4197,
+        "InstiName": "Jai Mahakali Shikshan Sanstha, Agnihotri College of Engineering, Sindhi(Meghe)"
+    },
+    {
+        "srno": 51,
+        "InstiCode": 4252,
+        "InstiName": "Late Madhukarrao Deshmukh Education Soceity's Avdhoot Diploma College Of Engineering, Mouza, Bhojapur"
+    },
+    {
+        "srno": 52,
+        "InstiCode": 4254,
+        "InstiName": "Krushna Sahayogi Tantra Shikshan Sanstha, Chatrapati Shivaji Institute Of Technology, Deori, Gondia"
+    },
+    {
+        "srno": 53,
+        "InstiCode": 4285,
+        "InstiName": "V M Institute of Engineering and Technology, Dongargaon, Nagpur"
+    },
+    {
+        "srno": 54,
+        "InstiCode": 4301,
+        "InstiName": "ITM College of Engineering, Nagpur"
+    },
+    {
+        "srno": 55,
+        "InstiCode": 4302,
+        "InstiName": "Gondia Education Society's Manoharbhai Patel Institute Of Engineering & Technology, Shahapur, Bhandara"
+    },
+    {
+        "srno": 56,
+        "InstiCode": 4303,
+        "InstiName": "Vidya Niketan Institute of Engineering and Technology, Nagpur"
+    },
+    {
+        "srno": 57,
+        "InstiCode": 4304,
+        "InstiName": "Cummins College of Engineering For Women, Sukhali (Gupchup), Tal. Hingna Hingna Nagpur"
+    },
+    {
+        "srno": 58,
+        "InstiCode": 4305,
+        "InstiName": "G.H.Raisoni Academy of Engineering & Technology, Nagpur"
+    },
+    {
+        "srno": 59,
+        "InstiCode": 4319,
+        "InstiName": "Indian Instiutute of Fire Engineering, Nagpur"
+    },
+    {
+        "srno": 60,
+        "InstiCode": 4612,
+        "InstiName": "Navneet Bahuuddeshya Sanstha, Kinkar Institute Of Technology,Seloo,Dist.Wardha"
+    },
+    {
+        "srno": 61,
+        "InstiCode": 4613,
+        "InstiName": "Suryodaya College of Engineering & Technology, Nagpur"
+    },
+    {
+        "srno": 62,
+        "InstiCode": 4645,
+        "InstiName": "Maharashtra College of Engineering, Betada, Brahmapuri"
+    },
+    {
+        "srno": 63,
+        "InstiCode": 4648,
+        "InstiName": "R.V. Parankar College of Engineering & Technology, Arvi, Dist Wardha"
+    },
+    {
+        "srno": 64,
+        "InstiCode": 4649,
+        "InstiName": "Bajaj Institute of Technology, Wardha"
+    },
+
+    
+]

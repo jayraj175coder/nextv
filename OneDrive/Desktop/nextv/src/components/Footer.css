@@ -1,0 +1,97 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.ct{
+   flex:1;
+   padding:10px;
+    height: auto; /* Set to auto to make it smaller */
+    max-width: 100%; /* Optionally limit the width */
+    /* Center the container */
+    background-color: #000000; /* Slightly lighter black for the container */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 0px;
+}
+
+.up {
+    clear: both;
+    height: 5rem;
+    justify-content: center;
+    position: relative;
+    top: -2rem;
+}
+
+.upward {
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;                            
+    height: 3rem;
+    margin-top: 10px;
+    position: absolute;
+    width: 3rem;
+    left: 700px;
+    background: url(https://sbi.co.in/o/Career-Theme/images/custom/scroll-up-icon.png) 50% center no-repeat;
+    border-width: 6px;
+    border-style: solid;
+    border-color: orange;
+}
+
+.main1 {
+    display: flex;
+    width: 100%;
+}
+
+.first, .third {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.fh4, .sh4 {
+    color: coral;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.fp {
+    color: rgb(14, 122, 216);
+    font-size: 1rem;
+    line-height: 25px;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.second {
+    text-align: center;
+    flex: 1 1 0%;
+}
+
+.sh4 {
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    margin: 3rem 0;
+}
+
+.cp {
+    color: rgb(229, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+}
+
+b, strong {
+    font-weight: bolder;
+}

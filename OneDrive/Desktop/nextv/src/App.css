@@ -1,0 +1,53 @@
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--grey-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,
+      hsl(185, 71%, 44%),
+      hsl(304, 89%, 49%));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(271, 60%, 45%);
+}
+
+.home-image {
+    width: 5%;
+    height: 35px;
+}
+
+
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  width: 100px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer a {
+  margin: 0 10px;
+}

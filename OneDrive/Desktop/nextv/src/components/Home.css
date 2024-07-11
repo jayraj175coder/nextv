@@ -1,0 +1,193 @@
+
+/* NavBar Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #141414;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #e5e5e5;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #b3b3b3;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  height: 640px;
+  color: #FFFFFF;
+}
+
+.hero-section, .hero-section-2 {
+  flex: 1;
+  margin: 20px;
+}
+
+.hero-section-2 img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 10px;
+  animation: float 4s ease-in-out infinite; /* Add float animation */
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Titles */
+.department-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.department-subtitle {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.department-description {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Content Section */
+.content-section {
+  background: #d3c2c2;
+  padding: 80px 40px;
+  margin-top: -20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.pt-4 {
+  padding-top: 1.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1.5rem;
+}
+
+/* Buttons */
+.custom-button {
+  background-color: #e50914;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #b20710;
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer-section {
+  padding: 40px 20px;
+  background: #141414;
+  color: white;
+  text-align: center;
+}
+
+.footer-section a {
+  color: white;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #b3b3b3;
+}
+
+
+/* CommunitySection.css */
+
+.container {
+  max-width: 1200px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e1e5ed; /* Darker shade of blue for the title */
+  margin-left: 100px;
+}
+
+.info-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #e0eaee; /* Subtle blue-gray for list items */
+  font-size: 1.1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #49f0fc; /* Light gray for the paragraph */
+  line-height: 1.6;
+}
+
+.custom-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #39db34; /* Bright blue for the button */
+  border: none;
+  color: #fff; /* White text */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-button:hover {
+  background-color: #b92941; /* Darker blue for hover effect */
+}
+
+.content-section2 {
+  padding-right: 20px;
+  background-color: rgba(255, 0, 0, 0);
+  margin-top: 100px;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for a softer look */
+}

@@ -1,0 +1,58 @@
+.container {
+    margin-top: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .filters {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .filters h5 {
+    margin-bottom: 15px;
+  }
+  
+  .alert-info {
+    font-size: 1.1em;
+  }
+  
+  .learn-more-btn {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #5a32a1;
+  }
+  h5{
+    color:white;
+  }

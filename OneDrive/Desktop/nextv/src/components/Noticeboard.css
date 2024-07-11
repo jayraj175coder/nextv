@@ -1,0 +1,83 @@
+.noticeboard-container {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: 12px solid rgba(255, 255, 255, 0.204);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 500px; /* Adjust as needed */
+  border-top-left-radius: 17px;
+  border-bottom-right-radius: 17px red;
+  
+}
+
+.noticeboard-card {
+  background-color: black;
+  border: none;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.noticeboard-card .card-body {
+  text-align: center;
+}
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  animation: marquee 10s linear infinite;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marquee.paused {
+  animation-play-state: paused;
+}
+
+.notice-card {
+  background-color: black;
+
+ font-size: 12px;
+  margin-bottom: 10px;
+  color: white;
+  width: 90%; /* Ensures notices fit within container */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Adjusting the corners to be black */
+.noticeboard-container::before,
+.noticeboard-container::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+.noticeboard-container::before {
+  top: -2px;
+  left: -2px;
+  border-top-left-radius: 10px;
+}
+
+.noticeboard-container::after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom-right-radius: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
