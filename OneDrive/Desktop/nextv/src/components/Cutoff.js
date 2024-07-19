@@ -16,7 +16,7 @@ const Cutoff = () => {
           <div key={region} className="col-md-6 mb-4">
             <Link to={`/colleges/${region}`} className="text-decoration-none text-dark">
               <div className="card">
-                <img src="/assests/Cutoff.png" className="card-img-top"  />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wHCoZMTFTclrJyVwIQ3_BJLC_Yud3E3JsQ&s" className="card-img-top"  />
                 <div className="card-body text-center">
                   <h5 className="card-title">{region}</h5>
                   <p className="card-text"></p>

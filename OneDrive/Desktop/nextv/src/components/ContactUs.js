@@ -37,7 +37,7 @@ function ContactUs() {
             <div className="card shadow-lg">
               <div className="row no-gutters">
                 <div className="col-md-6 d-none d-md-block">
-                  <img className="card-img h-100" src="/assests/bgfyt.jpg" alt="Contact Us" />
+                  <img className="card-img h-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUOdNJiiFLyxm0UYLUTHWj8RZt0FOv-ZupNg&s" alt="Contact Us" />
                 </div>
                 <div className="col-md-6 d-flex align-items-center">
                   <div className="card-body">

@@ -26,7 +26,7 @@ const Home = () => {
         <p className="department-description">The platform provide you to get your dream and best college with less efforts and ease way.</p>
       </div>
       <div className='hero-section-2'>
-        <img src="/assests/Homebg.jpeg"/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPbDf2wCykMbHwPXezehdJsw0Mzx5DzBriOQ&s"/>
        
       </div>
       </div>
@@ -37,7 +37,7 @@ const Home = () => {
       <div className="row text-center">
         <div className="col-md-3 mb-4">
           <div className="card">
-            <img src="/assests/Topcolleges.png" alt="Top Colleges" className="card-img-top" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYuTGEX_EjLuRB_1xjL9X8Lt_iF5kEAnYNGg&s" alt="Top Colleges" className="card-img-top" />
             <div className="card-body">
               <Link to="/colleges" className="btn btn-primary custom-button">Top Colleges</Link>
               <p className="card-text">It is reviewed by seeing all the aspects, which colleges should have in their campus.</p>
@@ -46,7 +46,7 @@ const Home = () => {
         </div>
         <div className="col-md-3 mb-4">
           <div className="card">
-            <img src="/assests/cutoff.jpg" alt="Cutoff" className="card-img-top" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wHCoZMTFTclrJyVwIQ3_BJLC_Yud3E3JsQ&s" alt="Cutoff" className="card-img-top" />
             <div className="card-body">
               <Link to="/cutoff" className="btn btn-primary custom-button">2019 Cut-Off</Link>
               <p className="card-text">Cut-Off of last year of all the colleges listed in the state of Maharashtra.</p>
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
         <div className="col-md-3 mb-4">
           <div className="card">
-            <img src="/assests/Blog.jpg" alt="Blog" className="card-img-top" />
+            <img src="https://cdn.pixabay.com/photo/2015/11/06/13/25/blog-1027861_640.jpg"alt="Blog" className="card-img-top" />
             <div className="card-body">
               <a href="https://medium.com/@jayrajsanas175/dsy-engineering-complete-guide-a239e712aa58" target="_blank" rel="noopener noreferrer" className="btn btn-primary custom-button">Blog</a>
               <p className="card-text">Go through all the blogs for all the important information you should know.</p>
@@ -64,7 +64,7 @@ const Home = () => {
         </div>
         <div className="col-md-3 mb-4">
       <div className="card">
-        <img src="/assests/Cutoff.png" alt="Discuss" className="card-img-top" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX2fDbq5UC-gXsZ8ggWMIc--dhDkc1lLIfPA&s" alt="Discuss" className="card-img-top" />
         <div className="card-body">
           <Link to="/Predictclg" className="btn btn-primary custom-button">PredictClg</Link>
           <p className="card-text">If you have difficulty then predict the top colleges that you want.</p>
@@ -89,7 +89,7 @@ const Home = () => {
           </ul>
         </div>
         <div className="col-md-6 text-section">
-          <img src="assests/Discuss.jpg" alt="Welcome to the Community" className="img-fluid mb-3" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYK-zRvdkgjV9uPO0LGn4SSfHkCf9Xarp-AA&s" alt="Welcome to the Community" className="img-fluid mb-3" />
           <p className="description">
             A Query Resolution Community is an online platform where users can post questions or queries on various topics and receive answers and solutions from other community members. It serves as a collaborative and knowledge-sharing space where individuals seek assistance or information from a broader audience...
           </p>

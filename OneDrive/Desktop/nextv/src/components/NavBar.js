@@ -7,7 +7,7 @@ export const NavBar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src="/assests/CollegeFinder.png" alt="College Finder" className="navbar-logo" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYMhZ9Y8EygIwhLGP4Bp7UjwKXBQ23LkTgw&s" alt="College Finder" className="navbar-logo" />
           CollegeFinder
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

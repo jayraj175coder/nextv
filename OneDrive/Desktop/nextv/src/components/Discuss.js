@@ -95,23 +95,7 @@ const Discuss = () => {
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">
-            <h1>Hello viewers...</h1>
-            <ul>
-              <li>Login First To Community.</li>
-              <li>Then you are able to ask Questions.</li>
-              <li>And able to Answer Too.</li>
-            </ul>
-          </div>
-          <div className="col-md-6">
-            <img src='/assests/Cutoff.png' alt="Welcome to the Community" className="img-fluid" />
-          </div>
-        </div>
-        <div className="mt-4">
-          <p>
-            A Query Resolution Community is an online platform where users can post questions or queries on various topics and receive answers and solutions from other community members. It serves as a collaborative and knowledge-sharing space where individuals seek assistance or information from a broader audience...
-          </p>
-          <Button variant="primary">Start Community</Button>
-        </div>
+           
         <div className="mt-5">
           <h2>Discuss</h2>
           <form onSubmit={handleSubmit} className="mb-4">
@@ -252,6 +236,8 @@ const Discuss = () => {
           </form>
         </Modal.Body>
       </Modal>
+    </div>
+    </div>
     </div>
   );
 };
