@@ -34,7 +34,7 @@ const AiAssistant = () => {
           },
           {
             headers: {
-              'Authorization': `Bearer sk-None-xBtwqqzKToHltSr9MaQeT3BlbkFJCM1nlWOuuLplZNzjugOZ`,
+              'Authorization': `Bearer sk-svcacct-WKYUzVPByeZphlm562w6T3BlbkFJBqivhwVktfAopYZ9DaZQ`,
               'Content-Type': 'application/json',
             },
           }
