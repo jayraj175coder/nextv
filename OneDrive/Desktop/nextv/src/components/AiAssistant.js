@@ -26,7 +26,7 @@ const AiAssistant = () => {
     } else {
       try {
         const response = await axios.post(
-          'https://api.openai.com/v1/engines/davinci-codex/completions',
+          'https://api.gemini.com/v1/engines/ask/completions',
           {
             prompt: question,
             max_tokens: 100,
@@ -34,7 +34,7 @@ const AiAssistant = () => {
           },
           {
             headers: {
-              'Authorization': `Bearer sk-svcacct-WKYUzVPByeZphlm562w6T3BlbkFJBqivhwVktfAopYZ9DaZQ`,
+              'Authorization': `Bearer AIzaSyDkLpZCuOOJeplyRCL-zpennjwBAFvvtD0`,
               'Content-Type': 'application/json',
             },
           }
