@@ -26,7 +26,7 @@ const AiAssistant = () => {
     } else {
       try {
         const response = await axios.post(
-          'https://api.gemini.com/v1/engines/ask/completions',
+          'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBkhxvZVguq_fhfjvjfVIz3CNV_pkXGisA',
           {
             prompt: question,
             max_tokens: 100,
@@ -34,7 +34,6 @@ const AiAssistant = () => {
           },
           {
             headers: {
-              'Authorization': `Bearer AIzaSyDkLpZCuOOJeplyRCL-zpennjwBAFvvtD0`,
               'Content-Type': 'application/json',
             },
           }
