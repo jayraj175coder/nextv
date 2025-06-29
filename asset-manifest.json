@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nextv/static/css/main.0902ed4b.css",
-    "main.js": "/nextv/static/js/main.b3b913a6.js",
+    "main.css": "/nextv/static/css/main.a8f89e1b.css",
+    "main.js": "/nextv/static/js/main.25fbb6c6.js",
     "index.html": "/nextv/index.html",
-    "main.0902ed4b.css.map": "/nextv/static/css/main.0902ed4b.css.map",
-    "main.b3b913a6.js.map": "/nextv/static/js/main.b3b913a6.js.map"
+    "main.a8f89e1b.css.map": "/nextv/static/css/main.a8f89e1b.css.map",
+    "main.25fbb6c6.js.map": "/nextv/static/js/main.25fbb6c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.0902ed4b.css",
-    "static/js/main.b3b913a6.js"
+    "static/css/main.a8f89e1b.css",
+    "static/js/main.25fbb6c6.js"
   ]
 }
