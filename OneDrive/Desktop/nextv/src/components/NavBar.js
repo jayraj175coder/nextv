@@ -34,7 +34,8 @@ export const NavBar = ({ isAuthenticated, onLogout }) => {
     { path: '/find-your-college', label: 'Find College', icon: '🎓' },
     { path: '/colleges', label: 'Top Colleges', icon: '🏆' },
     { path: '/cutoff', label: 'Cutoff', icon: '📊' },
-    { path: '/ai-assistant', label: 'AI Assistant', icon: '🤖' },
+    { path: '/ai-assistant', label: 'AI Assistant', icon: '��' },
+    { path: '/blog', label: 'Blog', icon: '📚' },
     { path: '/noticeboard', label: 'Notice Board', icon: '📢' },
     { path: '/contact-us', label: 'Contact', icon: '📞' },
   ];
@@ -88,6 +89,10 @@ export const NavBar = ({ isAuthenticated, onLogout }) => {
                   Account
                 </Dropdown.Toggle>
                 <Dropdown.Menu className="dropdown-menu">
+                  <Dropdown.Item as={Link} to="/dashboard">
+                    <span className="dropdown-icon">📊</span>
+                    Dashboard
+                  </Dropdown.Item>
                   <Dropdown.Item as={Link} to="/discuss">
                     <span className="dropdown-icon">💬</span>
                     Community

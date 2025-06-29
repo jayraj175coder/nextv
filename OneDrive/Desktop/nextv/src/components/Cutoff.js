@@ -2,33 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './NavBar';
+import Footer from './Footer';
 
-const Cutoff = () => {
-  const regions = [ 'Cutoff 2023', 'Cutoff 2022', 'Cutoff 2021', 'Cutoff 2024'];
-
-  return (
-    <div>
-      <NavBar/>
-    <div className="container">
-      <h1 className="my-4 text-center">College Cutoffs</h1>
-      <div className="row ">
-        {regions.map(region => (
-          <div key={region} className="col-md-6 mb-4">
-            <Link to={`/colleges/${region}`} className="text-decoration-none text-dark">
-              <div className="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wHCoZMTFTclrJyVwIQ3_BJLC_Yud3E3JsQ&s" className="card-img-top"  />
-                <div className="card-body text-center">
-                  <h5 className="card-title">{region}</h5>
-                  <p className="card-text"></p>
-                </div>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </div>
+const Cutoff = () => (
+  <>
+    <NavBar />
+    <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)' }}>
+      <h1 style={{ fontSize: '2.5rem', color: '#e50914', marginBottom: '1rem' }}>Cutoff Analysis</h1>
+      <p style={{ fontSize: '1.2rem', color: '#333', marginBottom: '2rem' }}>This page is under construction.</p>
+      <div style={{ fontSize: '3rem' }}>🚧</div>
+      <p style={{ color: '#888', marginTop: '1rem' }}>Check back soon for updates!</p>
     </div>
-    </div>
-  );
-};
+    <Footer />
+  </>
+);
 
 export default Cutoff;

@@ -11,6 +11,8 @@ import AiAssistant from './components/AiAssistant';
 import Discuss from './components/Discuss';
 import Login from './components/Login';
 import RegionDetails from './components/RegionDetails';
+import StudentDashboard from './components/StudentDashboard';
+import Blog from './components/Blog';
 import './App.css';
 import CollegeSearch from './components/CollegeSearch';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -88,6 +90,7 @@ const App = () => {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/ai-assistant" element={<AiAssistant />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/colleges/:region" element={<RegionDetails />} />
             <Route path="/find-your-college" element={<CollegeSearch />} />
             <Route path="/noticeboard" element={<Noticeboard />} />
@@ -109,6 +112,15 @@ const App = () => {
               element={
                 <ProtectedRoute isAuthenticated={isAuthenticated}>
                   <Discuss onLogout={handleLogout} />
+                </ProtectedRoute>
+              } 
+            />
+            
+            <Route 
+              path="/dashboard" 
+              element={
+                <ProtectedRoute isAuthenticated={isAuthenticated}>
+                  <StudentDashboard onLogout={handleLogout} />
                 </ProtectedRoute>
               } 
             />

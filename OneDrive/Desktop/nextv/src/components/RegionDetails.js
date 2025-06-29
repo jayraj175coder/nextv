@@ -1,65 +1,18 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import collegesdata from './collegesdata.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 import { NavBar } from './NavBar';
+import Footer from './Footer';
 
-const RegionDetails = () => {
-  const { region } = useParams();
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const filteredColleges = collegesdata.filter(college =>
-    college.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  return (
-    <div>
-      <NavBar />
-      <div className="container">
-        <h1 className="my-4 text-center">{region} </h1>
-        <div className="alert alert-info">
-          NOTE: While searching colleges please use full names.
-        </div>
-        <input
-          type="text"
-          className="form-control mb-4"
-          placeholder="Search for specific colleges.."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              <th>Sr No</th>
-              <th>Institute Code</th>
-              <th>Institute Name</th>
-              <th>CAP I</th>
-              <th>CAP II</th>
-              <th>CAP III</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filteredColleges.map((college, index) => (
-              <tr key={college.code}>
-                <td>{index + 1}</td>
-                <td>{college.code}</td>
-                <td>{college.name}</td>
-                <td>
-                  <a href={college.cap1} className="btn btn-info" target="_blank" rel="noopener noreferrer">VIEW</a>
-                </td>
-                <td>
-                  <a href={college.cap2} className="btn btn-info" target="_blank" rel="noopener noreferrer">VIEW</a>
-                </td>
-                <td>
-                  <a href={college.cap3} className="btn btn-info" target="_blank" rel="noopener noreferrer">VIEW</a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+const RegionDetails = () => (
+  <>
+    <NavBar />
+    <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)' }}>
+      <h1 style={{ fontSize: '2.5rem', color: '#e50914', marginBottom: '1rem' }}>Region Details</h1>
+      <p style={{ fontSize: '1.2rem', color: '#333', marginBottom: '2rem' }}>This page is under construction.</p>
+      <div style={{ fontSize: '3rem' }}>🚧</div>
+      <p style={{ color: '#888', marginTop: '1rem' }}>Check back soon for updates!</p>
     </div>
-  );
-};
+    <Footer />
+  </>
+);
 
 export default RegionDetails;
