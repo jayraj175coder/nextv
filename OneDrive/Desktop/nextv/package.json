@@ -1,8 +1,23 @@
 {
-  "name": "nextv",
-  "version": "0.1.0",
+  "name": "collegefinder",
+  "version": "1.0.0",
+  "description": "A modern college discovery platform with AI-powered recommendations",
   "private": true,
   "homepage": "https://jayraj175coder.github.io/nextv/",
+  "author": {
+    "name": "Jayraj Sanas",
+    "email": "jayrajsanas175@gmail.com",
+    "url": "https://github.com/jayraj175coder"
+  },
+  "keywords": [
+    "college",
+    "education",
+    "ai",
+    "react",
+    "firebase",
+    "maharashtra",
+    "engineering"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -18,8 +33,7 @@
     "puppeteer": "^22.12.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
-    "react-dom": "^18.3.1",
-    "react-error-boundary": "^6.0.0",
+    "react-error-boundary": "^4.0.12",
     "react-quill": "^2.0.0",
     "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
@@ -29,12 +43,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "react-scripts start",
+    "lint": "react-scripts build",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "analyze": "npm run build && npx webpack-bundle-analyzer build/static/js/*.js"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +71,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayraj175coder/nextv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jayraj175coder/nextv/issues"
+  },
+  "license": "MIT"
 }

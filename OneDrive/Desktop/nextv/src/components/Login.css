@@ -32,3 +32,355 @@
     background-color: #007bff;
   }
   
+/* Login Page Styles */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.login-background {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.login-container {
+  position: relative;
+  z-index: 2;
+}
+
+.login-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Login Header */
+.login-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.login-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.login-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Login Options */
+.login-options {
+  margin: 2rem 0;
+}
+
+.login-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 2px solid transparent;
+}
+
+.google-btn {
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  border-color: #4285f4;
+  color: white;
+}
+
+.google-btn:hover {
+  background: linear-gradient(135deg, #3367d6, #2d8a2d);
+  border-color: #3367d6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3);
+  color: white;
+}
+
+.google-btn:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  transform: none;
+  box-shadow: none;
+}
+
+.guest-btn {
+  background: transparent;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.guest-btn:hover {
+  background: #6c757d;
+  border-color: #6c757d;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(108, 117, 125, 0.3);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #dee2e6;
+}
+
+.divider span {
+  background: white;
+  padding: 0 1rem;
+  color: #6c757d;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+/* Login Features */
+.login-features {
+  background: #f8f9fa;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.features-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #666;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.features-list li:hover {
+  background: rgba(57, 219, 52, 0.1);
+  transform: translateX(5px);
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+  min-width: 25px;
+}
+
+/* Login Footer */
+.login-footer {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1.5rem;
+}
+
+.footer-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #2d8a2d;
+  text-decoration: underline;
+}
+
+/* Alert Styles */
+.alert {
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+}
+
+.alert-danger .alert-heading {
+  color: white;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-background {
+    padding: 1rem 0;
+  }
+  
+  .login-title {
+    font-size: 2rem;
+  }
+  
+  .login-subtitle {
+    font-size: 1rem;
+  }
+  
+  .login-card {
+    margin: 0 1rem;
+  }
+  
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .login-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-title {
+    font-size: 1.8rem;
+  }
+  
+  .login-icon {
+    font-size: 3rem;
+  }
+  
+  .login-card .card-body {
+    padding: 2rem 1.5rem;
+  }
+  
+  .login-features {
+    padding: 1rem;
+  }
+  
+  .features-list li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Loading Animation */
+.spinner-border {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .login-icon {
+    animation: none;
+  }
+  
+  .login-card,
+  .login-btn,
+  .features-list li {
+    transition: none;
+  }
+}
+
+/* Focus styles */
+.login-btn:focus,
+.footer-link:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .login-card {
+    background: rgba(30, 30, 30, 0.95);
+    color: white;
+  }
+  
+  .login-title {
+    color: white;
+  }
+  
+  .login-subtitle {
+    color: #ccc;
+  }
+  
+  .login-features {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .features-list li {
+    color: #ccc;
+  }
+  
+  .divider span {
+    background: rgba(30, 30, 30, 0.95);
+  }
+}
+  
