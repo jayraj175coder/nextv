@@ -1,36 +1,121 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './NavBar.css'; // Assuming you have a separate CSS file for styles
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Navbar, Nav, Container, Button, Dropdown } from 'react-bootstrap';
+import './NavBar.css';
 
-export const NavBar = () => {
+export const NavBar = ({ isAuthenticated, onLogout }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleLogout = () => {
+    if (onLogout) {
+      onLogout();
+    }
+    navigate('/');
+  };
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
+  const navItems = [
+    { path: '/', label: 'Home', icon: '🏠' },
+    { path: '/find-your-college', label: 'Find College', icon: '🎓' },
+    { path: '/colleges', label: 'Top Colleges', icon: '🏆' },
+    { path: '/cutoff', label: 'Cutoff', icon: '📊' },
+    { path: '/ai-assistant', label: 'AI Assistant', icon: '🤖' },
+    { path: '/noticeboard', label: 'Notice Board', icon: '📢' },
+    { path: '/contact-us', label: 'Contact', icon: '📞' },
+  ];
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYMhZ9Y8EygIwhLGP4Bp7UjwKXBQ23LkTgw&s" alt="College Finder" className="navbar-logo" />
-          CollegeFinder
-        </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/find-your-college">Find Your College</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/ai-assistant">AiAssistant</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact-us">Contact Us</Link>
-            </li>
-           
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar 
+      expand="lg" 
+      className={`navbar-custom ${isScrolled ? 'scrolled' : ''}`}
+      fixed="top"
+    >
+      <Container>
+        <Navbar.Brand as={Link} to="/" className="navbar-brand">
+          <div className="brand-container">
+            <img 
+              src="/logo192.png" 
+              alt="CollegeFinder" 
+              className="navbar-logo"
+              onError={(e) => {
+                e.target.src = 'https://via.placeholder.com/40x40/e50914/ffffff?text=CF';
+              }}
+            />
+            <span className="brand-text">CollegeFinder</span>
+          </div>
+        </Navbar.Brand>
+
+        <Navbar.Toggle 
+          aria-controls="navbar-nav" 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        />
+
+        <Navbar.Collapse id="navbar-nav" className={isMobileMenuOpen ? 'show' : ''}>
+          <Nav className="ms-auto">
+            {navItems.map((item) => (
+              <Nav.Item key={item.path}>
+                <Nav.Link 
+                  as={Link} 
+                  to={item.path}
+                  className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span className="nav-icon">{item.icon}</span>
+                  {item.label}
+                </Nav.Link>
+              </Nav.Item>
+            ))}
+
+            {isAuthenticated ? (
+              <Dropdown as={Nav.Item}>
+                <Dropdown.Toggle as={Nav.Link} className="dropdown-toggle">
+                  <span className="nav-icon">👤</span>
+                  Account
+                </Dropdown.Toggle>
+                <Dropdown.Menu className="dropdown-menu">
+                  <Dropdown.Item as={Link} to="/discuss">
+                    <span className="dropdown-icon">💬</span>
+                    Community
+                  </Dropdown.Item>
+                  <Dropdown.Divider />
+                  <Dropdown.Item onClick={handleLogout}>
+                    <span className="dropdown-icon">🚪</span>
+                    Logout
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            ) : (
+              <Nav.Item>
+                <Button 
+                  as={Link} 
+                  to="/login" 
+                  variant="outline-light" 
+                  className="login-btn"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span className="nav-icon">🔐</span>
+                  Login
+                </Button>
+              </Nav.Item>
+            )}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-}
+};

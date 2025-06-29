@@ -1,5 +1,8 @@
-import React ,{useState}from 'react';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { ErrorBoundary } from 'react-error-boundary';
+
+// Import components
 import Home from './components/Home';
 import Colleges from './components/Colleges';
 import Cutoff from './components/Cutoff';
@@ -14,37 +17,108 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Noticeboard from './components/Noticeboard';
 import PredictCollege from './components/PredictCollege';
 
+// Error Fallback Component
+const ErrorFallback = ({ error, resetErrorBoundary }) => {
+  return (
+    <div className="error-container" role="alert">
+      <h2>Something went wrong!</h2>
+      <pre>{error.message}</pre>
+      <button onClick={resetErrorBoundary}>Try again</button>
+    </div>
+  );
+};
+
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  return (
-  <Router basename={process.env.PUBLIC_URL}>
+  const [isLoading, setIsLoading] = useState(true);
 
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/colleges" element={<Colleges />} />
-          <Route path="/cutoff" element={<Cutoff />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/ai-assistant" element={<AiAssistant />} />
-          
-          <Route path="/contact-us" element={<ContactUs/>}/>
-          <Route path="/colleges/:region" element={<RegionDetails/>} />
-          <Route path="/find-your-college" element={<CollegeSearch/>}/>
-          <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-          <Route path="/noticeboard" element={<Noticeboard />} />
-        <Route 
-          path="/discuss" 
-          element={
-            <ProtectedRoute isAuthenticated={isAuthenticated}>
-              <Discuss />
-            </ProtectedRoute>
-          } 
-        />
-        <Route path="/Predictclg" element={<PredictCollege/>}/>
-        <Route path="/" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-        </Routes>
+  useEffect(() => {
+    // Check if user is already authenticated (e.g., from localStorage or Firebase)
+    const checkAuthStatus = () => {
+      try {
+        const authStatus = localStorage.getItem('isAuthenticated');
+        if (authStatus === 'true') {
+          setIsAuthenticated(true);
+        }
+      } catch (error) {
+        console.error('Error checking authentication status:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    checkAuthStatus();
+  }, []);
+
+  const handleLogin = (status) => {
+    setIsAuthenticated(status);
+    localStorage.setItem('isAuthenticated', status.toString());
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem('isAuthenticated');
+  };
+
+  if (isLoading) {
+    return (
+      <div className="loading-container">
+        <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
       </div>
-    </Router>
+    );
+  }
+
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={() => {
+        // Reset the state of your app here
+        window.location.reload();
+      }}
+    >
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="App">
+          <Routes>
+            {/* Public Routes */}
+            <Route path="/" element={<Home isAuthenticated={isAuthenticated} onLogout={handleLogout} />} />
+            <Route path="/colleges" element={<Colleges />} />
+            <Route path="/cutoff" element={<Cutoff />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/ai-assistant" element={<AiAssistant />} />
+            <Route path="/colleges/:region" element={<RegionDetails />} />
+            <Route path="/find-your-college" element={<CollegeSearch />} />
+            <Route path="/noticeboard" element={<Noticeboard />} />
+            <Route path="/Predictclg" element={<PredictCollege />} />
+            
+            {/* Authentication Routes */}
+            <Route 
+              path="/login" 
+              element={
+                isAuthenticated ? 
+                <Navigate to="/" replace /> : 
+                <Login setIsAuthenticated={handleLogin} />
+              } 
+            />
+            
+            {/* Protected Routes */}
+            <Route 
+              path="/discuss" 
+              element={
+                <ProtectedRoute isAuthenticated={isAuthenticated}>
+                  <Discuss onLogout={handleLogout} />
+                </ProtectedRoute>
+              } 
+            />
+            
+            {/* Catch all route - redirect to home */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </div>
+      </Router>
+    </ErrorBoundary>
   );
 };
 

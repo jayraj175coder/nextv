@@ -1,109 +1,227 @@
 // src/Home.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css'; // Assuming you have a CSS file for styles
 import { NavBar } from './NavBar';
 import Footer from './Footer';
 import Noticeboard from './Noticeboard';
-import { Button} from 'react-bootstrap';
-
-
 import AnimatedBackground from './AnimatedBackground';
-// Update with the correct path to your logo
 
-const Home = () => {
+const Home = ({ isAuthenticated, onLogout }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  const features = [
+    {
+      id: 1,
+      title: 'Top Colleges',
+      description: 'Discover the best colleges reviewed across all aspects including academics, infrastructure, and placement records.',
+      image: '/assests/Topcolleges.png',
+      link: '/colleges',
+      icon: '🏆'
+    },
+    {
+      id: 2,
+      title: 'Cutoff Analysis',
+      description: 'Access comprehensive cutoff data from previous years for all colleges across Maharashtra.',
+      image: '/assests/Cutoff.png',
+      link: '/cutoff',
+      icon: '📊'
+    },
+    {
+      id: 3,
+      title: 'Educational Blog',
+      description: 'Stay informed with our comprehensive blog covering all important aspects of college admissions.',
+      image: '/assests/Blog.jpg',
+      link: 'https://medium.com/@jayrajsanas175/dsy-engineering-complete-guide-a239e712aa58',
+      icon: '📝',
+      external: true
+    },
+    {
+      id: 4,
+      title: 'College Predictor',
+      description: 'Get AI-powered predictions for your college admissions based on your scores and preferences.',
+      image: '/assests/CollegeFinder.png',
+      link: '/Predictclg',
+      icon: '🎯'
+    }
+  ];
+
+  const handleImageError = (e) => {
+    e.target.src = 'https://via.placeholder.com/300x200/e50914/ffffff?text=CollegeFinder';
+  };
+
   return (
     <div className="home-container">
-      <NavBar />
-      <AnimatedBackground/>
+      <NavBar isAuthenticated={isAuthenticated} onLogout={onLogout} />
+      <AnimatedBackground />
       
-       <div className="hero">
-      <div className="hero-section">
-        
-        <h1 className="department-title">Take first Step</h1>
-        <h2 className="department-subtitle">Towards your next future with us</h2>
-        <p className="department-description">The platform provide you to get your dream and best college with less efforts and ease way.</p>
-      </div>
-      <div className='hero-section-2'>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPbDf2wCykMbHwPXezehdJsw0Mzx5DzBriOQ&s"/>
-       
-      </div>
-      </div>
-      
-
-      <div className="content-section container">
-      <h1 className="display-4 text-center mb-4">Find Your Next College Here</h1>
-      <div className="row text-center">
-        <div className="col-md-3 mb-4">
-          <div className="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYuTGEX_EjLuRB_1xjL9X8Lt_iF5kEAnYNGg&s" alt="Top Colleges" className="card-img-top" />
-            <div className="card-body">
-              <Link to="/colleges" className="btn btn-primary custom-button">Top Colleges</Link>
-              <p className="card-text">It is reviewed by seeing all the aspects, which colleges should have in their campus.</p>
+      {/* Hero Section */}
+      <section className={`hero fade-in ${isVisible ? 'visible' : ''}`}>
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1 className="hero-title">
+              Take Your First Step
+              <span className="highlight"> Towards Success</span>
+            </h1>
+            <h2 className="hero-subtitle">
+              Discover Your Perfect College with AI-Powered Insights
+            </h2>
+            <p className="hero-description">
+              Our comprehensive platform helps you find the best colleges with minimal effort. 
+              Get personalized recommendations, analyze cutoffs, and connect with the community.
+            </p>
+            <div className="hero-buttons">
+              <Button 
+                as={Link} 
+                to="/find-your-college" 
+                variant="primary" 
+                size="lg"
+                className="hero-btn primary"
+              >
+                🎓 Find Your College
+              </Button>
+              <Button 
+                as={Link} 
+                to="/ai-assistant" 
+                variant="outline-light" 
+                size="lg"
+                className="hero-btn secondary"
+              >
+                🤖 AI Assistant
+              </Button>
             </div>
           </div>
-        </div>
-        <div className="col-md-3 mb-4">
-          <div className="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wHCoZMTFTclrJyVwIQ3_BJLC_Yud3E3JsQ&s" alt="Cutoff" className="card-img-top" />
-            <div className="card-body">
-              <Link to="/cutoff" className="btn btn-primary custom-button">2019 Cut-Off</Link>
-              <p className="card-text">Cut-Off of last year of all the colleges listed in the state of Maharashtra.</p>
-            </div>
+          <div className="hero-image">
+            <img 
+              src="/assests/CollegeTempBg.png" 
+              alt="College Finder Platform"
+              onError={handleImageError}
+              className="hero-img"
+            />
           </div>
         </div>
-        <div className="col-md-3 mb-4">
-          <div className="card">
-            <img src="https://cdn.pixabay.com/photo/2015/11/06/13/25/blog-1027861_640.jpg"alt="Blog" className="card-img-top" />
-            <div className="card-body">
-              <a href="https://medium.com/@jayrajsanas175/dsy-engineering-complete-guide-a239e712aa58" target="_blank" rel="noopener noreferrer" className="btn btn-primary custom-button">Blog</a>
-              <p className="card-text">Go through all the blogs for all the important information you should know.</p>
-            </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features-section">
+        <Container>
+          <div className="section-header text-center mb-5">
+            <h2 className="section-title">Everything You Need to Find Your Perfect College</h2>
+            <p className="section-subtitle">
+              Comprehensive tools and resources to make your college search easier and more effective
+            </p>
           </div>
-        </div>
-        <div className="col-md-3 mb-4">
-      <div className="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX2fDbq5UC-gXsZ8ggWMIc--dhDkc1lLIfPA&s" alt="Discuss" className="card-img-top" />
-        <div className="card-body">
-          <Link to="/Predictclg" className="btn btn-primary custom-button">PredictClg</Link>
-          <p className="card-text">If you have difficulty then predict the top colleges that you want.</p>
-        </div>
-      </div>
-    </div>
-        
+          
+          <Row className="g-4">
+            {features.map((feature, index) => (
+              <Col key={feature.id} lg={3} md={6} sm={12}>
+                <Card className={`feature-card slide-in-${index % 2 === 0 ? 'left' : 'right'}`}>
+                  <div className="card-image-container">
+                    <img 
+                      src={feature.image} 
+                      alt={feature.title}
+                      className="card-img-top"
+                      onError={handleImageError}
+                    />
+                    <div className="card-icon">{feature.icon}</div>
+                  </div>
+                  <Card.Body className="text-center">
+                    <Card.Title className="feature-title">{feature.title}</Card.Title>
+                    <Card.Text className="feature-description">
+                      {feature.description}
+                    </Card.Text>
+                    {feature.external ? (
+                      <a 
+                        href={feature.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="btn btn-primary custom-button"
+                      >
+                        Read More
+                      </a>
+                    ) : (
+                      <Button 
+                        as={Link} 
+                        to={feature.link} 
+                        variant="primary"
+                        className="custom-button"
+                      >
+                        Explore
+                      </Button>
+                    )}
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
 
-      </div>
-    </div>
+      {/* Notice Board Section */}
+      <section className="notice-section">
+        <Container>
+          <Noticeboard />
+        </Container>
+      </section>
 
-     <div>
-     <Noticeboard/>
-     <div className="container mt-5">
-      <div className="row">
-        <div className="col-md-6 content-section2">
-          <h1 className="title">Hello viewers...</h1>
-          <ul className="info-list">
-            <li>Login First To Community.</li>
-            <li>Then you are able to ask Questions.</li>
-            <li>And able to Answer Too.</li>
-          </ul>
-        </div>
-        <div className="col-md-6 text-section">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYK-zRvdkgjV9uPO0LGn4SSfHkCf9Xarp-AA&s" alt="Welcome to the Community" className="img-fluid mb-3" />
-          <p className="description">
-            A Query Resolution Community is an online platform where users can post questions or queries on various topics and receive answers and solutions from other community members. It serves as a collaborative and knowledge-sharing space where individuals seek assistance or information from a broader audience...
-          </p>
-          <Link to="/Discuss" className="btn btn-primary custom-button">Discuss Here...</Link>
-        </div>
-      </div>
-    </div>
-    
-    
+      {/* Community Section */}
+      <section className="community-section">
+        <Container>
+          <Row className="align-items-center">
+            <Col lg={6} md={12} className="mb-4">
+              <div className="community-content">
+                <h2 className="community-title">Join Our Community</h2>
+                <div className="community-features">
+                  <div className="feature-item">
+                    <span className="feature-icon">🔐</span>
+                    <span className="feature-text">Login to access the community</span>
+                  </div>
+                  <div className="feature-item">
+                    <span className="feature-icon">💬</span>
+                    <span className="feature-text">Ask questions and get answers</span>
+                  </div>
+                  <div className="feature-item">
+                    <span className="feature-icon">🤝</span>
+                    <span className="feature-text">Connect with fellow students</span>
+                  </div>
+                </div>
+                <p className="community-description">
+                  Our Query Resolution Community is a collaborative platform where students can share 
+                  experiences, ask questions, and get valuable insights from peers and experts.
+                </p>
+                <Button 
+                  as={Link} 
+                  to="/discuss" 
+                  variant="success" 
+                  size="lg"
+                  className="community-btn"
+                >
+                  Join Discussion
+                </Button>
+              </div>
+            </Col>
+            <Col lg={6} md={12}>
+              <div className="community-image">
+                <img 
+                  src="/assests/Discuss.jpg" 
+                  alt="Community Discussion"
+                  onError={handleImageError}
+                  className="community-img"
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
-     </div>
-      <div>
-        <Footer/>
-      </div>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
